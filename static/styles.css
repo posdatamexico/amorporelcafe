@@ -1,0 +1,100 @@
+h1 {
+  font-size: 25px;
+  font-family: Arial;
+}
+h2 {
+  font-size: 25px;
+  font-family: Arial;
+  color: red;
+  text-align: center;
+}
+h3 {
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: 'Strong';
+  text-align: center;
+}
+.topnav {
+  width: 100%
+}
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: Tomato;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+li a:hover {
+  background-color: Tomato;
+}
+p {
+  font-family: Arial;
+  font-size: 18px;
+  text-align: center;
+}
+.form-group {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+svg {
+  margin: auto;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(106, 90, 205);
+  border-radius: 5px;
+  font-color: white;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+}
+form {
+  display: table-column;
+}
+#receta {
+  width: 100%;
+}
+td {
+  text-align: justify;
+  align-content: center;
+  width: 300px;
+}
+footer {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
