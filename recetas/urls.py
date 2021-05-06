@@ -1,10 +1,11 @@
 from django.urls import path
-from .views import home, publicar, nosotros, buscar, detail
+from .views import home, publicar, nosotros, buscar, receta
+from recetas import views
 
 urlpatterns = [
-	path('', home.as_view(), name='home'),
+	path('', home, name='home'),
 	path('publicar', publicar.as_view(), name='publicar'),
 	path('nosotros', nosotros, name='nosotros'),
-	path('buscar', buscar, name='buscar'),
-	path('detail', detail.as_view(), name='detail'),
+	path('buscar', views.buscar, name='buscar'),
+	path('receta/<receta_id>', views.receta, name='receta'),
 ]

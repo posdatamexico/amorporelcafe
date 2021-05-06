@@ -3,17 +3,17 @@
 {% block content %}
 	{% if searched %}
 <div>
-	<h1>Encontramos estas recetas para ti...</h1>
+	<h1>Estas buscando... {{ searched }}</h1>
 	<br/>
-	{% for recetas in Recetas %}
-		<tr>
-			<td>
-				<a href="{% url 'detail' receta.id %}">
-				{{ Recetas.nombre }}
-				</a>
-			</td>
-		</tr>
-	{% endfor %}
+		{% for recetas in Recetas %}
+			<tr>
+				<td>
+					<a href="{% url 'receta' receta.id %}">
+					{{ recetas }}
+					</a>
+				</td>
+			</tr>
+		{% endfor %}
 </div>
 	{% else %}
 		<h1>Olvidaste buscar receta</h1>

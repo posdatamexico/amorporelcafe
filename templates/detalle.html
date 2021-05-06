@@ -2,18 +2,29 @@
 {% block content %}
 
 <div class="container">
-<h1>{{ Recetas.name }}</h1>
-	<small>By: {{ Recetas.autor }}</small> 
-	<div class="card"><img src="{{ Recetas.image.url }}"></div><br/><br/>
-<br/><br/>
-<strong>{{ Recetas.porcion }}</strong>|<strong>{{ Recetas.tiempo }}</strong>
-<hr>
-	<p>{{ Recetas.body|safe }}</p>
-</div>
+		<h1>{{ receta }}</h1>
+		<br/>
+		<small>By: {{ receta.autor }}</small> 
+	</div>
+	<div class="card"><img src="{{ receta.image.url }}"></div>
+	<br/><br/>
+	<div>
+		<small>Rinde para: </small>
+		<strong>{{ receta.porcion }}</strong>
+		<small>Tiempo de preparación: </small>
+		<strong>{{ receta.tiempo }}</strong>
+	</div>
+		<hr>
+	<div class="container" id="body">
+		<tr>
+		<td>
+			<p>{{ receta.body|safe }}</p>
+		</td>
+		</tr>
+	</div>
 <br/><br/>
 <a style="margin-left: 20px;" href="{% url 'home' %}">Regresar</a>
 <hr>
 <br/>
-
 
 {% endblock %}

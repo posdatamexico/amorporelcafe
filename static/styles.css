@@ -14,8 +14,17 @@ h3 {
   font-weight: 'Strong';
   text-align: center;
 }
+small {
+  margin-left: 15px;
+}
 .topnav {
   width: 100%
+}
+#body {
+  display: table-row;
+}
+nav {
+  background-color: white;
 }
 ul {
   width: 100%;
@@ -80,6 +89,7 @@ div {
   background-color: #f2f2f2;
   padding: 20px;
   display: flex;
+  justify-content: center;
 }
 form {
   display: table-column;
