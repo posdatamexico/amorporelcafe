@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	{% if searched %}
+<div>
+	<h1>Encontramos estas recetas para ti...</h1>
+	<br/>
+	{% for recetas in Recetas %}
+		<tr>
+			<td>
+				<a href="{% url 'detail' receta.id %}">
+				{{ Recetas.nombre }}
+				</a>
+			</td>
+		</tr>
+	{% endfor %}
+</div>
+	{% else %}
+		<h1>Olvidaste buscar receta</h1>
+	{% endif %}
+	
+{% endblock %}

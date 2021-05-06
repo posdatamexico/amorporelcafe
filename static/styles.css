@@ -23,7 +23,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: Tomato;
 }
 
 li {
@@ -41,7 +40,7 @@ a {
 }
 
 li a:hover {
-  background-color: Tomato;
+  background-color: white;
 }
 p {
   font-family: Arial;
@@ -70,7 +69,7 @@ button {
   height: 35px;
   background-color: rgb(106, 90, 205);
   border-radius: 5px;
-  font-color: white;
+  color: white;
 }
 img {
   width: 100%;
