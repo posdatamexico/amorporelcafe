@@ -20,9 +20,6 @@ small {
 .topnav {
   width: 100%
 }
-#body {
-  display: table-row;
-}
 nav {
   background-color: white;
 }
@@ -89,7 +86,7 @@ div {
   background-color: #f2f2f2;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  text-align: center;
 }
 form {
   display: table-column;
@@ -100,7 +97,6 @@ form {
 td {
   text-align: justify;
   align-content: center;
-  width: 300px;
 }
 footer {
   margin-top: 5px;

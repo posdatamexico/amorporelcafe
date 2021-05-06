@@ -9,18 +9,26 @@
 	<div class="card"><img src="{{ receta.image.url }}"></div>
 	<br/><br/>
 	<div>
-		<small>Rinde para: </small>
-		<strong>{{ receta.porcion }}</strong>
-		<small>Tiempo de preparación: </small>
-		<strong>{{ receta.tiempo }}</strong>
-	</div>
-		<hr>
-	<div class="container" id="body">
+		<table>
 		<tr>
 		<td>
-			<p>{{ receta.body|safe }}</p>
-		</td>
+		<small>Rinde para:    </small>
+		<strong>{{ receta.porcion }}</strong></td>
+		<td>
+		<small>Tiempo de preparación:     </small>
+		<strong>{{ receta.tiempo }}</strong></td>
 		</tr>
+		</table>
+	</div>
+		<hr>
+	<div class="container">
+		<table>
+			<tr>
+			<td>
+				<p>{{ receta.body|safe }}</p>
+			</td>
+			</tr>
+		</table>
 	</div>
 <br/><br/>
 <a style="margin-left: 20px;" href="{% url 'home' %}">Regresar</a>
